@@ -41,16 +41,16 @@ export default function Navigation() {
     >
       <div className="mx-auto w-full">
         <div className="flex w-full items-center justify-between h-20 px-4 md:px-8 lg:px-16">
-          <div className="text-2xl font-bold text-brand-almost-black">
+          <div className="text-sm font-bold text-brand-almost-black">
             DeepNode
           </div>
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-4">
             {navItems.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
                 onClick={(e) => handleNavClick(e, item.href)}
-                className="text-brand-almost-black hover:text-brand-primary transition-colors duration-200 font-medium cursor-pointer"
+                className="text-sm text-brand-almost-black hover:text-brand-primary transition-colors duration-200 font-medium cursor-pointer"
               >
                 {item.label}
               </a>

@@ -6,6 +6,7 @@ import TheSolution from './components/TheSolution';
 import CoreOffers from './components/CoreOffers';
 import WhomWeWorkWith from './components/WhomWeWorkWith';
 import WhyDeepNode from './components/WhyDeepNode';
+import FloatingEmailButton from './components/FloatingEmailButton';
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <WhomWeWorkWith />
         <WhyDeepNode />
       </main>
+      <FloatingEmailButton />
     </div>
   );
 }
