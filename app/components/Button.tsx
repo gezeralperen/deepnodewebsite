@@ -30,7 +30,19 @@ export default function Button({
   const combinedClassName = `${baseStyles} ${variantStyles[variant]} ${sizeStyles[size]} ${className}`.trim();
 
   return (
-    <button className={combinedClassName} {...props}>
+    <button 
+      className={combinedClassName} 
+      style={{
+        animation: 'none',
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.animation = 'shake 0.5s ease-in-out infinite';
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.animation = 'none';
+      }}
+      {...props}
+    >
       {children}
     </button>
   );

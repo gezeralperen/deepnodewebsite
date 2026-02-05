@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import FirebaseAnalytics from "./components/FirebaseAnalytics";
 
 
 export const metadata: Metadata = {
@@ -21,6 +22,7 @@ export default function RootLayout({
         className= "antialiased"
       >
         {children}
+        <FirebaseAnalytics />
       </body>
     </html>
   );
