@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import FirebaseAnalytics from "./components/FirebaseAnalytics";
-
 
 export const metadata: Metadata = {
   title: "DeepNode - Innovative Solutions",
@@ -18,11 +16,8 @@ export default function RootLayout({
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/rld8ece.css"></link>
       </head>
-      <body
-        className= "antialiased"
-      >
+      <body className="antialiased">
         {children}
-        <FirebaseAnalytics />
       </body>
     </html>
   );
